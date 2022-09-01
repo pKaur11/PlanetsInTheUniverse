@@ -1,0 +1,73 @@
+/* grid */
+
+#grid {
+    display: grid;
+    grid-template-rows: repeat(8,12.5%);
+    grid-template-columns: repeat(3,30%);
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    min-height: 72px;
+    margin: 10px auto;
+    padding-top: 3px; 
+    width: 101.5%;
+}
+
+#grid1, #grid3, #grid4, #grid6, #grid7, #grid9, #grid10, #grid12, #grid13, #grid15, #grid16, #grid18, #grid19, #grid21, 
+#grid22, #grid24 {
+    padding: 15px;
+}
+
+div[id^="grid"] {
+    text-align: center;
+}
+
+.sec5 {margin: auto;}
+
+.sec5 form {
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(3,230px);
+    align-content: center;
+    justify-content: center;
+    margin: 10px auto;
+    border: 2px solid black;
+    background-color: aliceblue; 
+    width: 103%; 
+    padding: 20px 10px;
+}
+
+div[id^="div_"], #control {
+    border: 2px solid darkgreen;
+    text-align: center; 
+    padding: 10px; 
+    border-radius: 100%; 
+    margin: 2px;
+}
+
+#control {
+    grid-area: 2/2/3/3;
+    border-style: none;
+}
+
+#div_1 {order: 1;}
+#div_2 {order: 2;}
+#div_3 {order: 3;}
+#div_8 {order: 4;}
+#div_4 {order: 5;}
+#div_7 {order: 6;}
+#div_6 {order: 7;}
+#div_5 {order: 8;}
+
+#msg {
+    padding: 15px 0 48px;
+}
+
+#button {
+    width: 100%;
+    height: 20%;
+    line-height: 1.5em;    
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,15 @@
+/* inline_validation */
+
+input#first_name:focus:valid,
+input#last_name:focus:valid,
+input#email:focus:valid
+{
+    background: rgb(220,255,220) url('../images/rb_valid.png') right bottom/contain no-repeat;
+}
+
+input#first_name:focus:invalid,
+input#last_name:focus:invalid,
+input#email:focus:invalid
+{
+    background: rgb(255,232,233) url('../images/rb_invalid.png') right bottom/contain no-repeat;
+}

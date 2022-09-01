@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Planets in the Universe</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Prabhjot Kaur">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/styles_PKa29696.css">
+        <link rel="stylesheet" href="css/navigation_PKa29696.css">
+        <link rel="stylesheet" href="css/grid_PKa29696.css">                
+        <link rel="stylesheet" href="css/responsive_design_PKa29696.css">
+        <script src="script/weight_PKa29696.js"></script>
+        <script src="script/game_PKa29696.js"></script>       
+    </head>
+    <body>
+        <header>
+            <h1>Planets in the Universe</h1>
+            <p>
+                The universe consists of solar system, stars, galaxies and so many other elements. 
+            <br>
+                The solar system has the sun at the centre, and all the planets are revolving around it in the elliptical 
+                orbits.
+            </p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index_PKa29696.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="planets_PKa29696.html" class="menu">Planets</a>
+                    <div class="links">
+                        <div class="links1">
+                            <h3>Terrestrial Planets</h3>
+                            <a href="planets_PKa29696.html#sn1">Mercury</a>
+                            <a href="planets_PKa29696.html#sn2">Venus</a>
+                            <a href="planets_PKa29696.html#sn3">Earth</a>
+                            <a href="planets_PKa29696.html#sn4">Mars</a>
+                        </div>
+                        <div class="links2">
+                            <h3>Jovian Planets</h3>
+                            <a href="planets_PKa29696.html#sn5">Jupiter</a>
+                            <a href="planets_PKa29696.html#sn6">Saturn</a>
+                            <a href="planets_PKa29696.html#sn7">Uranus</a>
+                            <a href="planets_PKa29696.html#sn8">Neptune</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="questions_and_feedback_PKa29696.html">FAQs</a></li>
+            </ul>
+        </nav>
+        <article id="names">
+            <aside>
+                <p>
+                    Initially, planets were nine in number; however, Pluto is now expelled out of this category because 
+                    it does not show the properties of the planets.
+                </p>
+            </aside>
+
+            <section class="sec1">
+                <h2>Planets</h2>
+                <p>
+                    Planets are heavenly bodies revolving around the sun in the elliptical orbits. They do not emit light 
+                    of their own, but they appear bright as they reflect light of sun. These are eight in number. They 
+                    can be seen with a small telecope or binoculars. 
+                    <br>
+                    According to 
+                    <cite><a href="https://en.wikipedia.org/wiki/International_Astronomical_Union" target="_blank">
+                    International Astronomical Union in 2006</a></cite>, a planet must have three basic properties:
+                </p>
+                <ol>
+                    <li>It must revolve around a star.</li>
+                    <li>It must be big enough to have enough gravity to force it into a spherical shape.</li>
+                    <li>
+                        It must be big enough that its gravity cleared away any other objects of a similar size near 
+                        its orbit around the Sun.
+                    </li>
+                </ol>                
+                <h2>Uniqueness of Planets</h2>
+                <p id="full">
+                    According to <cite>
+                    <a href="https://www.universetoday.com/38118/how-was-the-solar-system-formed/" target="_blank">
+                    Nebular hypothesis</a></cite>, every star, planet and moon are made from nebular cloud. The stars 
+                    were formed at the first before planets and asteriods. The planets are formed 4.5 billion years ago.
+                    Nebular clouds are made of helium, hydrogen and dust particles. When these clouds were rotating, helium 
+                    and hydrogen started gathering at the centre. At the centre, these molecules collided with one another. 
+                    Due to collisions and fractions, fusion reaction took place and the Sun was created. After that, heavier 
+                    elements like oxygen, nitrogen, carbon, and so forth moved away from the centre. These elements started 
+                    forming nebular clouds, and ultimately, the planets were formed with further rotations, collisions and 
+                    fractions.
+                    <br>
+                    Due to their higher boiling points, only metals and silicates could exist in solid form closer to 
+                    the Sun, and these would eventually form the terrestrial planets of Mercury, Venus, Earth, and Mars. 
+                    Because metallic elements only comprised a very small fraction of the solar nebula, the terrestrial 
+                    planets could not grow very large. In contrast, the giant planets (Jupiter, Saturn, Uranus, and 
+                    Neptune) formed beyond the point between the orbits of Mars and Jupiter where material is cool enough 
+                    for volatile icy compounds to remain solid. This is the uniqueness of the planets.              
+                </p>
+                <h3>Names of the planets are:</h3>
+                <ol>
+                    <li>Mercury</li>
+                    <li>Venus</li>
+                    <li>Earth</li>
+                    <li>Mars</li>
+                    <li>Jupiter</li>
+                    <li>Saturn</li>
+                    <li>Uranus</li>
+                    <li>Neptune</li>
+                </ol>
+            </section>
+
+            <section class="sec2">
+                <h2>Watch the video to get basic knowledge about solar system and planets:</h2>
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/libKVRa01L8" allowfullscreen></iframe>                
+            </section>
+
+            <section class="sec3">
+                <h2>To find your weight on different planets:</h2>
+                <form name="form" method="get" action=''>
+                    <div id="div1">
+                        <label for="weight">Enter your weight(in kg): </label><br> 
+                        <input type="text" name="weight" id="weight">
+                    </div><br>
+                    <div id="div2">                        
+                        Click one of the following buttons for knowing your weight on the respective planet:<br>                        
+                        <input type="button" value="Mercury" onclick="calculateOnMercury(this.form);">
+                        <input type="button" value="Venus" onclick="calculateOnVenus(this.form);">
+                        <input type="button" value="Earth" onclick="calculateOnEarth(this.form);">
+                        <input type="button" value="Mars" onclick="calculateOnMars(this.form);">
+                        <input type="button" value="Jupiter" onclick="calculateOnJupiter(this.form);">
+                        <input type="button" value="Saturn" onclick="calculateOnSaturn(this.form);">
+                        <input type="button" value="Uranus" onclick="calculateOnUranus(this.form);">
+                        <input type="button" value="Neptune" onclick="calculateOnNeptune(this.form);">
+                    </div><br>
+                    <div id="div3">
+                        <label for="out">Converted Weight (kg):</label>
+                        <input type="text" name="out" id="out" disabled>
+                        <input type="reset" name="reset" value="Clear">
+                    </div>
+                </form>
+            </section>
+
+            <section class="sec4">
+                <h2>Easy method to remember the names of the planets in order:</h2>
+                <div id="grid">
+                    <div id="grid1">My</div>
+                    <div id="grid2"><img src="images/Mercury.webp" alt="mercury" width="50" height="50"></div>                                         
+                    <div id="grid3">Mercury</div>
+
+                    <div id="grid4">Very</div>                                            
+                    <div id="grid5"><img src="images/Venus.webp" alt="venus" width="50" height="50"></div>
+                    <div id="grid6">Venus</div>
+
+                    <div id="grid7">Easy</div>                                              
+                    <div id="grid8"><img src="images/Earth.webp" alt="earth" width="50" height="50"></div>
+                    <div id="grid9">Earth</div>
+
+                    <div id="grid10">Method</div>                                             
+                    <div id="grid11"><img src="images/Mars.webp" alt="mars" width="50" height="50"></div>
+                    <div id="grid12">Mars</div>
+
+                    <div id="grid13">Just</div>                                              
+                    <div id="grid14"><img src="images/Jupiter.webp" alt="jupiter" width="50" height="50"></div>
+                    <div id="grid15">Jupiter</div>
+
+                    <div id="grid16">Speeds</div>                                              
+                    <div id="grid17"><img src="images/Saturn.jpg" alt="saturn" width="50" height="50"></div>
+                    <div id="grid18">Saturn</div>
+
+                    <div id="grid19">Up</div>                                             
+                    <div id="grid20"><img src="images/Uranus.jpg" alt="uranus" width="50" height="50"></div>
+                    <div id="grid21">Uranus</div>
+
+                    <div id="grid22">Names</div>                                           
+                    <div id="grid23"><img src="images/Neptune.webp" alt="neptune" width="50" height="50"></div>
+                    <div id="grid24">Neptune</div>
+                </div>
+            </section>                    
+
+            <section class="sec5">
+                <h2>Let's know about the highlighted facts of the planets through the <ins>Planets Game</ins>:</h2>
+                <form>        
+                    <!-- https://i.pinimg.com/originals/d0/86/52/d08652aeab047160c6a2f2c56ace12fc.png -->         
+                    <div id="div_1"><img src="images/Mercury1.png" alt="mercury" width="100%" height="100%"></div>
+
+                    <!-- https://cdn.pixabay.com/photo/2012/04/10/17/39/venus-26620_960_720.png -->
+                    <div id="div_2"><img src="images/Venus1.webp" alt="venus" width="80%" height="100%"></div>
+
+                    <!-- https://cdn.pixabay.com/photo/2016/06/14/20/38/planet-earth-1457453_960_720.png -->
+                    <div id="div_3"><img src="images/Earth1.webp" alt="earth" width="100%" height="100%"></div>
+
+                    <!-- https://upload.wikimedia.org/wikipedia/commons/2/27/Mars_transparent.png -->
+                    <div id="div_4"><img src="images/Mars1.png" alt="mars" width="90%" height="100%"></div>
+
+                    <!-- https://pixabay.com/vectors/jupiter-planet-solar-system-153563/ -->
+                    <div id="div_5"><img src="images/Jupiter.webp" alt="jupiter" width="80%" height="100%"></div>
+
+                    <!-- https://pixabay.com/illustrations/saturn-saturn-s-rings-planet-4314403/ -->
+                    <div id="div_6"><img src="images/Saturn1.png" alt="saturn" width="90%" height="100%"></div>
+
+                    <!-- https://pixabay.com/vectors/uranus-solar-system-planet-153572/ -->
+                    <div id="div_7"><img src="images/Uranus1.png" alt="uranus" width="80%" height="100%"></div>
+
+                    <!--  https://pixabay.com/vectors/neptune-solar-system-planet-153571/ -->
+                    <div id="div_8"><img src="images/Neptune1.webp" alt="neptune" width="80%" height="100%"></div> 
+                    
+                    <div id="control">
+                        <p id="msg"></p>
+                        <input type="button" value="Click here to know about planets" onclick="startGame();" id="button">
+                    </div>
+                </form>
+            </section>           
+        </article>
+        <footer>
+            <small><em>Copyright &copy; 2020</em></small>
+        </footer>
+    </body>
+</html>
+
